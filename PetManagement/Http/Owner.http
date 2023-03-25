@@ -1,0 +1,30 @@
+@url = https://localhost:7047
+
+### Get All
+GET {{url}}/api/Owners
+
+### Get by Id
+GET {{url}}/api/Owners/8
+
+### Get by Id
+DELETE {{url}}/api/Owners/4
+
+########## PUT, Create #################
+### Add new pet
+POST {{url}}/api/Owners
+Content-Type: application/json
+
+{
+  "name": "Owner 2",
+  "description": "Captin the hut"
+}
+
+
+### Update
+PUT {{url}}/api/Owners/3
+Content-Type: application/json
+
+{
+  "name": "Mohsin",
+  "description": "The ownere..."
+}
